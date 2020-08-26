@@ -1,0 +1,17 @@
+@import 'Base/_BaseIndex';
+@import 'ColorPalette/_ColorPaletteIndex';
+@import 'Components/_ComponentsIndex';
+
+html, body {
+	height: 100vh;
+
+	background-color: $gray4;
+	background-image: url('../Img/bg-pattern.svg');
+	background-size: 100px;
+	background-repeat: repeat;
+
+	font-family: 'Segoe UI';
+	letter-spacing: 0.01em;
+	color: $gray1;
+	font-size: $size + px;
+}
