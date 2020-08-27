@@ -29,3 +29,35 @@ $base-transition: all ease-in-out 0.1s;
 	}
 
 }
+
+@mixin base-search {
+	padding-bottom: $s5px;
+	border-bottom: $s2px solid $gray3;
+	margin-bottom: $s15px;
+
+	form {
+		position: relative;
+
+		&:before {
+			content: '';
+			background-image: url('../../Img/search.svg');
+			height: $s15px;
+			width: $s15px;
+			position: absolute;
+			left: $s5px;
+			top: $s5px;
+		}
+
+		input[type='search'] {
+			border: none;
+			font-family: 'Segoe UI';
+			color: $gray1;
+			font-size: $s12px;
+			margin-left: $s20px;
+			padding: $s5px;
+			position: relative;
+		}
+
+	}
+
+}

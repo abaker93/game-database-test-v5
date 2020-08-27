@@ -12,12 +12,55 @@ class Sort extends React.Component {
 							<Icon name="view--grid" fill="" className="icon icon__view--grid" />
 							<span>Master view</span>
 						</button>
+						<ul id="sort-nav__view--menu" className="hidden">
+							<li className="search">
+								<form>
+									<input type="search" placeholder="Find a view" name="sort-nav__view--search" />
+								</form>
+							</li>
+							<li className="options">
+								<ul>
+									<li>
+										<Icon name="view--grid" fill="" className="icon icon__view--grid" />
+										<span>Master View</span>
+									</li>
+									<li>
+										<Icon name="view--grid" fill="" className="icon icon__view--grid" />
+										<span>Behind the Scenes</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li className="sort-nav__hidden">
 						<button className="sort-button active">
 							<Icon name="hide" fill="" className="icon" />
 							<span>16 hidden fields</span>
 						</button>
+						<ul id="sort-nav__hidden--menu" className="hidden">
+							<li className="search">
+								<form>
+									<input type="search" placeholder="Find a field" name="sort-nav__hidden--search" />
+								</form>
+							</li>
+							<li className="options">
+								<ul>
+									{
+										this.props.tableHeaders.map(header => {
+											return (
+												<li>
+													<Icon name={header.type}
+														  fill="" 
+														  className="icon"
+													/>
+													<span>{header.name}</span>
+												</li>
+											)
+										})
+									}
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li className="sort-nav__filter">
 						<button className="sort-button active">

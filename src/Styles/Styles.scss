@@ -27,5 +27,24 @@ html, body {
 	}
 
 	.options { @include base-options; }
+
+	.search { @include base-search; }
+
+	.icon.icon__view--grid 	   { fill: $blue; }
+	.icon.icon__view--form 	   { fill: $pink; }
+	.icon.icon__view--calendar { fill: $yellow; }
+	.icon.icon__view--gallery  { fill: $purple; }
+	.icon.icon__view--kanban   { fill: $teal; }
+
+	.icon.icon__arrow--up 	 { transform: rotate(180deg); }
+	.icon.icon__arrow--right { transform: rotate(-90deg); }
+	.icon.icon__arrow--down  { transform: rotate(0deg); }
+	.icon.icon__arrow--left  { transform: rotate(90deg); }
+
+	.icon-grid .icon {
+		height: $s40px;
+		width: $s40px;
+		padding: $s20px;
+	}
 	
 }

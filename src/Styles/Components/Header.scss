@@ -95,6 +95,19 @@ header {
 				background-color: $blue;
 			}
 
+			#user-menu {
+				@include base-dropdown;
+				top: 20px;
+				right: 0;
+
+				.username {
+					font-family: 'Segoe UI Semibold';
+					border-bottom: $s2px solid $gray3;
+					padding-bottom: $s15px;
+					margin-bottom: $s15px;
+				}
+			}
+
 		}
 
 	}
@@ -138,6 +151,30 @@ header {
 						transition: $base-transition;
 					}
 
+				}
+
+				#table-menu {
+					@include base-dropdown;
+
+					top: 45px;
+					left: 0;
+
+					font-family: 'Segoe UI';
+					font-weight: 500;
+					text-transform: none;
+					letter-spacing: 0.01em;
+					font-size: $s15px;
+					color: $gray1;
+
+					.options ul li {
+						padding-left: $s20px;
+
+						&.active {
+							color: $gray1;
+						}
+
+					}
+					
 				}
 
 			}

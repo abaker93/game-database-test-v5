@@ -39,13 +39,13 @@
 
 			&.sort-nav__view {
 				position: relative;
-				
-				.icon.icon__view--grid { fill: $blue; }
 
 				.sort-button .icon.icon__caret {
-						height: $s13px;
-						margin-right: $s15px;
+					height: $s13px;
+					margin-right: $s15px;
 				}
+
+				#sort-nav__view--menu { @include base-dropdown; }
 
 			}
 
@@ -56,6 +56,8 @@
 					&.active { background-color: $pale-lt-blue; }
 
 				}
+
+				#sort-nav__hidden--menu { @include base-dropdown; }
 
 			}
 
