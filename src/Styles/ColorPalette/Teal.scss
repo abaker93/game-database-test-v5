@@ -1,0 +1,60 @@
+#app.teal {
+
+	header {
+		background-color: $teal;
+
+		#logo {
+
+			h1 { color: $blue; }
+			
+			.icon { fill: $blue; }
+
+		}
+
+		#header-right {
+			
+			>li {
+
+				.icon__palette {
+
+					&:hover, &:focus { fill: $blue; }
+
+				}
+
+				>.icon__user {
+					background-color: $blue;
+
+					&:hover, &:focus { background-color: rgba(73, 0, 255, 0.6); }
+
+				}
+
+			}
+
+		}
+
+		nav {
+			
+			>ul>li {
+
+				&.active {
+					color: $blue;
+					border-bottom-color: $blue;
+				}
+
+				&#tables {
+
+					.icon-menu {
+	
+						&:hover, &:focus { fill: $blue; }
+						
+					}
+	
+				}
+
+			}
+
+		}
+
+	}
+
+}

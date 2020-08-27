@@ -1,0 +1,96 @@
+#sort {
+	background-color: $white;
+	padding: $s10px $s20px;
+
+	.sort-nav {
+
+		>li {
+			display: inline-block;
+
+			.sort-button {
+				margin: 0 $s2px;
+				padding: $s2px $s6px;
+				font-family: 'Segoe UI';
+				font-size: $s13px;
+				color: $gray1;
+				border-radius: $s3px;
+				font-weight: 500;
+				background-color: $transparent-white;
+				border: 2px solid $transparent-white;
+				cursor: pointer;
+
+				&>* { vertical-align: middle; }
+
+				&:hover, &:focus {
+					outline: none;
+					background-color: $gray4;
+					transition: $base-transition;
+				}
+
+				&.active:hover, &.active:focus { border: 2px solid rgba(0,0,0,0.16); }
+
+				span {
+					position: relative;
+					margin-left: $s5px;
+					margin-top: -$s1px;
+				}
+
+			}
+
+			&.sort-nav__view {
+				position: relative;
+				
+				.icon.icon__view--grid { fill: $blue; }
+
+				.sort-button .icon.icon__caret {
+						height: $s13px;
+						margin-right: $s15px;
+				}
+
+			}
+
+			&.sort-nav__hidden {
+
+				button {
+
+					&.active { background-color: $pale-lt-blue; }
+
+				}
+
+			}
+
+			&.sort-nav__filter {
+
+				button {
+
+					&.active { background-color: $pale-yellow; }
+
+				}
+
+			}
+
+			&.sort-nav__group {
+
+				button {
+
+					&.active { background-color: $pale-purple; }
+
+				}
+
+			}
+
+			&.sort-nav__sort {
+
+				button {
+
+					&.active { background-color: $pale-red; }
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

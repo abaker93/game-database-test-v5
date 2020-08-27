@@ -1,0 +1,108 @@
+header {
+	text-align: center;
+	position: relative;
+	box-shadow: 0 $s3px $s4px rgba(0,0,0,0.16);
+
+	#logo {
+		padding: $s15px $s20px;
+
+		.icon {
+			margin-right: $s20px;
+			vertical-align: middle;
+			height: $s25px;
+		}
+
+		h1 {
+			display: inline;
+			vertical-align: middle;
+		}
+
+	}
+
+	#header-right {
+		position: absolute;
+		top: $s15px;
+		right: $s20px;
+		text-align: right;
+
+		>li {
+			display: inline;
+			vertical-align: middle;
+			position: relative;
+
+			.icon__palette, .icon__user {
+				fill: $white;
+				height: $s25px;
+				width: $s25px;
+				padding: $s2px;
+				border-radius: 50%;
+
+				&:hover, &:focus { transition: $base-transition; }
+
+			}
+
+			.icon__palette {
+				margin-right: $s15px;
+
+				&:hover, &:focus { background-color: rgba(255,255,255,0.8); }
+
+			}
+
+			.icon__user {
+				height: $s22px;
+				width: $s22px;
+				background-color: $blue;
+			}
+
+		}
+
+	}
+
+	nav {
+		text-align: left;
+
+		>ul>li {
+			display: inline-block;
+			margin: 0;
+			padding: $s20px;
+			cursor: pointer;
+
+			font-family: 'anonymous-pro', monospace;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			font-size: $s17px;
+			color: $white;
+
+			&:hover, &:focus { border-bottom: $s4px solid $white; }
+
+			&.active { border-bottom: $s4px solid;}
+
+			&#tables {
+				position: relative;
+				margin: 0 $s11px 0 $s20px;
+				padding: 0;
+				vertical-align: middle;
+
+				&:hover, &:focus { border-bottom: none; }
+				
+				.icon__menu {
+					border-radius: $s3px;
+					padding: $s7px;
+					fill: $white;
+					height: $s30px;
+
+					&:hover, &:focus {
+						background-color: rgba(255,255,255,0.3);
+						transition: $base-transition;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

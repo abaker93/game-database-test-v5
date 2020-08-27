@@ -1,6 +1,6 @@
-@import 'Base/_BaseIndex';
-@import 'ColorPalette/_ColorPaletteIndex';
-@import 'Components/_ComponentsIndex';
+@import 'Base/BaseIndex';
+@import 'ColorPalette/ColorPaletteIndex';
+@import 'Components/ComponentsIndex';
 
 html, body {
 	height: 100vh;
@@ -14,4 +14,16 @@ html, body {
 	letter-spacing: 0.01em;
 	color: $gray1;
 	font-size: $size + px;
+
+	.btn-icon { cursor: pointer; }
+
+	.hidden { display: none; }
+	.show { display: block !important; }
+
+	.icon {
+		fill: $gray1;
+		height: $s15px;
+		width: auto;
+	}
+	
 }
