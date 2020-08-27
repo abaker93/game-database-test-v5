@@ -26,6 +26,8 @@ const getViewBox = name => {
 			return "0 0 50 50";
 		case "sort":
 			return "0 0 50 50";
+		case "toggle":
+			return "0 0 50 50";
 		case "user":
 			return "0 0 50 50";
 		case "view--grid":
@@ -61,6 +63,8 @@ const getPath = (name, props) => {
 			return <path {...props} d="M40.6 40.6H9.4V9.4H25V5H9.4A4.4 4.4 0 0 0 5 9.4V40.6A4.4 4.4 0 0 0 9.4 45H40.6A4.5 4.5 0 0 0 45 40.6V25H40.6ZM29.4 5V9.4h8L15.6 31.3l3.1 3.1L40.6 12.6v8H45V5Z" />;
 		case "sort":
 			return <path {...props} d="M41 21H9L25 5ZM25 45 41 29H9Z" />;
+		case "toggle":
+			return <path {...props} d="M35 15H15a10 10 0 0 0 0 20H35a10 10 0 0 0 0-20ZM15 33a8 8 0 1 1 8-8A8 8 0 0 1 15 33Z" />;
 		case "user":
 			return <path {...props} d="M8.1 35.9c0.1-2.6 2-4.6 5.9-6.3a28.1 28.1 0 0 1 11-2.4 27.6 27.6 0 0 1 11 2.5c3.9 1.7 5.8 3.8 5.9 6.2Q35.7 45 25 45T8.1 35.9ZM25 21.9a8.2 8.2 0 0 0 6-2.5 8.1 8.1 0 0 0 2.5-6 8.2 8.2 0 0 0-2.5-6A8.4 8.4 0 0 0 25 5a8.2 8.2 0 0 0-6 2.5 8.1 8.1 0 0 0-2.5 6A8.5 8.5 0 0 0 25 21.9Z" />;
 		case "view--grid":

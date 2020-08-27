@@ -25,5 +25,7 @@ html, body {
 		height: $s15px;
 		width: auto;
 	}
+
+	.options { @include base-options; }
 	
 }

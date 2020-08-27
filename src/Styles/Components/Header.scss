@@ -48,6 +48,47 @@ header {
 
 			}
 
+			#palette-menu {
+				@include base-dropdown;
+				right: 20px;
+				top: 20px;
+
+				.colors {
+					border-bottom: $s2px solid $gray3;
+					padding-bottom: $s15px;
+					margin-bottom: $s15px;
+
+					ul {
+						display: grid;
+						grid-template-columns: repeat(7, 1fr);
+
+						li {
+							height: $s25px;
+							width: $s25px;
+							display: inline-block;
+							border-radius: 50%;
+							border: $s2px solid $transparent-white;
+							cursor: pointer;
+
+							&:hover, &:focus { border: $s2px solid rgba(0,0,0,0.1); }
+
+							&.active {
+								background-image: url('../../Img/check.svg');
+								background-position: $s2px $s3px;
+								background-size: $s20px;
+								background-repeat: no-repeat;
+							}
+
+							&:not(:last-child) { margin-right: $s5px; }
+
+						}
+						
+					}
+
+				}
+
+			}
+
 			.icon__user {
 				height: $s22px;
 				width: $s22px;
